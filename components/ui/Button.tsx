@@ -1,0 +1,45 @@
+import type { PropsWithChildren } from "react";
+
+type Variant = "primary" | "secondary";
+type Size = "sm" | "md";
+
+export function Button({
+  children,
+  href,
+  variant = "primary",
+  size = "md",
+  className = "",
+}: PropsWithChildren<{
+  href?: string;
+  variant?: Variant;
+  size?: Size;
+  className?: string;
+}>) {
+  const base =
+    "inline-flex items-center justify-center rounded-xl font-semibold transition focus:outline-none focus:ring-2 focus:ring-[#30B365]/30";
+
+  const sizes: Record<Size, string> = {
+    sm: "h-9 px-4 text-sm",
+    md: "h-11 px-5 text-sm",
+  };
+
+  const variants: Record<Variant, string> = {
+    primary: "bg-[#30B365] text-white hover:bg-[#279d59]",
+    secondary:
+      "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
+  };
+
+  const cls = [base, sizes[size], variants[variant], className].join(" ");
+
+  if (href) {
+    return (
+      <a href={href} className={cls}>
+        {children}
+      </a>
+    );
+  }
+
+  return <button className={cls}>{children}</button>;
+}
+
+
