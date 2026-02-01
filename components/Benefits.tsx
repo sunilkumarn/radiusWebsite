@@ -21,36 +21,38 @@ function BenefitCard({
   iconBg: string;
 }) {
   return (
-    <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-soft">
+    <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
       <div
         className={[
           "flex h-12 w-12 items-center justify-center rounded-2xl",
           iconBg,
         ].join(" ")}
       >
-        <div className="h-6 w-6 text-slate-700">{icon}</div>
+        <div className="h-6 w-6 text-gray-700">{icon}</div>
       </div>
-      <div className="mt-4 text-sm font-semibold text-slate-900">{title}</div>
-      <div className="mt-2 text-sm leading-6 text-slate-600">{description}</div>
+      <div className="mt-4 text-xl font-semibold text-gray-900">{title}</div>
+      <div className="mt-3 text-lg leading-relaxed text-gray-600">
+        {description}
+      </div>
     </div>
   );
 }
 
 export function Benefits() {
   return (
-    <section className="bg-white" id="benefits">
+    <section className="bg-[#F6FBF8]" id="benefits">
       <Container>
-        <div className="py-16 lg:py-24">
+        <div className="py-24">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
               Why people love Radius
             </h2>
-            <p className="mt-3 text-sm text-slate-600">
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">
               Built with care for local communities
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             <BenefitCard
               title="No spam"
               description="Only updates from shops you choose to follow. Complete control over your feed."

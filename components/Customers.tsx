@@ -28,11 +28,11 @@ function FeatureItem({
           iconBg,
         ].join(" ")}
       >
-        <div className="h-5 w-5 text-slate-700">{icon}</div>
+        <div className="h-5 w-5 text-gray-700">{icon}</div>
       </div>
-      <div>
-        <div className="text-sm font-semibold text-slate-900">{title}</div>
-        <div className="mt-1 text-sm leading-6 text-slate-600">
+      <div className="max-w-xl">
+        <div className="text-xl font-semibold text-gray-900">{title}</div>
+        <div className="mt-2 text-lg leading-relaxed text-gray-600">
           {description}
         </div>
       </div>
@@ -44,11 +44,11 @@ export function Customers() {
   return (
     <section className="bg-white" id="customers">
       <Container>
-        <div className="grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
+        <div className="grid items-center gap-12 py-24 lg:grid-cols-2">
           <div className="mx-auto w-full max-w-sm sm:max-w-md">
             <PhoneMockup className="aspect-[9/18] w-full">
               <img
-                src="/images/customer-screen.png"
+                src="images/customer-screen.png"
                 alt="Radius customer screen"
                 className="h-full w-full object-cover"
                 width={450}
@@ -59,11 +59,11 @@ export function Customers() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
               Everything you need from nearby shops
             </h2>
 
-            <div className="mt-8 space-y-6">
+            <div className="mt-8 space-y-8">
               <FeatureItem
                 title="Follow favorite shops"
                 description="Stay updated with your go-to local businesses. Never miss what matters to you."

@@ -42,9 +42,9 @@ export function Footer() {
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#30B365] text-white shadow-sm">
                 <MapPinIcon className="h-5 w-5 text-white" />
               </div>
-              <div className="text-sm font-semibold text-slate-900">Radius</div>
+              <div className="text-sm font-semibold text-gray-900">Radius</div>
             </div>
-            <p className="mt-4 max-w-sm text-sm text-slate-600">
+            <p className="mt-4 max-w-sm text-sm text-gray-600">
               Connecting customers with local businesses
             </p>
 
@@ -72,24 +72,24 @@ export function Footer() {
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
               Product
             </div>
-            <ul className="mt-4 space-y-3 text-sm text-slate-600">
+            <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-slate-900" href="#benefits">
+                <a className="hover:text-gray-900" href="#benefits">
                   Features
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#how-it-works">
+                <a className="hover:text-gray-900" href="#how-it-works">
                   How It Works
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#customers">
+                <a className="hover:text-gray-900" href="#customers">
                   For Customers
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#shops">
+                <a className="hover:text-gray-900" href="#shops">
                   For Shops
                 </a>
               </li>
@@ -100,24 +100,24 @@ export function Footer() {
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
               Company
             </div>
-            <ul className="mt-4 space-y-3 text-sm text-slate-600">
+            <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   About Us
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Blog
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Careers
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Contact
                 </a>
               </li>
@@ -128,24 +128,24 @@ export function Footer() {
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
               Legal
             </div>
-            <ul className="mt-4 space-y-3 text-sm text-slate-600">
+            <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Cookie Policy
                 </a>
               </li>
               <li>
-                <a className="hover:text-slate-900" href="#">
+                <a className="hover:text-gray-900" href="#">
                   Disclaimer
                 </a>
               </li>

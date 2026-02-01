@@ -16,17 +16,17 @@ export function Button({
   className?: string;
 }>) {
   const base =
-    "inline-flex items-center justify-center rounded-xl font-semibold transition focus:outline-none focus:ring-2 focus:ring-[#30B365]/30";
+    "inline-flex items-center justify-center rounded-xl font-semibold tracking-wide transition focus:outline-none focus:ring-2 focus:ring-[#30B365]/30";
 
   const sizes: Record<Size, string> = {
-    sm: "h-9 px-4 text-sm",
-    md: "h-11 px-5 text-sm",
+    sm: "h-10 px-4 text-base",
+    md: "h-12 px-6 text-base",
   };
 
   const variants: Record<Variant, string> = {
     primary: "bg-[#30B365] text-white hover:bg-[#279d59]",
     secondary:
-      "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
+      "border border-slate-200 bg-white text-gray-900 hover:bg-slate-50",
   };
 
   const cls = [base, sizes[size], variants[variant], className].join(" ");

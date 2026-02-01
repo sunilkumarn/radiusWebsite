@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const repoName = "radiusWebsite"; // your repo name
-
+const repoName = "radiusWebsite";
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {

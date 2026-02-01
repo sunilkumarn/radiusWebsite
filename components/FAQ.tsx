@@ -41,23 +41,23 @@ export function FAQ() {
   return (
     <section className="bg-white" id="faq">
       <Container>
-        <div className="py-16 lg:py-24">
+        <div className="py-24">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
               Frequently Asked Questions
             </h2>
-            <p className="mt-3 text-sm text-slate-600">
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">
               Everything you need to know about Radius
             </p>
           </div>
 
-          <div className="mx-auto mt-10 max-w-3xl space-y-4">
+          <div className="mx-auto mt-12 max-w-3xl space-y-4">
             {items.map((item, idx) => {
               const open = openIdx === idx;
               return (
                 <div
                   key={item.q}
-                  className="rounded-xl border border-slate-100 bg-white shadow-soft"
+                  className="rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md"
                 >
                   <button
                     type="button"
@@ -65,7 +65,7 @@ export function FAQ() {
                     className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                     aria-expanded={open}
                   >
-                    <span className="text-sm font-semibold text-slate-900">
+                    <span className="text-xl font-semibold text-gray-900">
                       {item.q}
                     </span>
                     <ChevronDownIcon
@@ -77,7 +77,7 @@ export function FAQ() {
                   </button>
                   {open ? (
                     <div className="px-5 pb-5 pt-0">
-                      <p className="text-sm leading-6 text-slate-600">
+                      <p className="max-w-2xl text-lg leading-relaxed text-gray-600">
                         {item.a}
                       </p>
                     </div>

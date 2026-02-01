@@ -7,13 +7,13 @@ export function PhoneMockup({
   return (
     <div
       className={[
-        "relative overflow-hidden rounded-[40px] border border-slate-200 bg-white shadow-xl",
+        "relative rounded-[40px] border border-gray-100 bg-white p-2 shadow-2xl",
         className,
       ].join(" ")}
     >
       {/* subtle phone bezel */}
       <div className="pointer-events-none absolute inset-0 rounded-[40px] ring-1 ring-black/5" />
-      {children}
+      <div className="overflow-hidden rounded-[32px] bg-white">{children}</div>
     </div>
   );
 }

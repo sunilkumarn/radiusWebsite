@@ -11,7 +11,7 @@ function CTAChip({
   label: string;
 }) {
   return (
-    <div className="flex items-center gap-2 text-xs font-medium text-white/90">
+    <div className="flex items-center gap-2 text-sm font-medium text-white/90">
       <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/15">
         <span className="h-3.5 w-3.5 text-white">{icon}</span>
       </span>
@@ -24,11 +24,11 @@ export function CTA() {
   return (
     <section className="bg-[#30B365]" id="download">
       <Container>
-        <div className="py-14 text-center sm:py-16">
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <div className="py-24 text-center sm:py-28">
+          <h2 className="text-3xl font-semibold text-white md:text-4xl">
             Start discovering local businesses today
           </h2>
-          <p className="mt-3 text-sm text-white/85">
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/85">
             Join thousands of people already connecting with their favorite
             neighborhood shops
           </p>
@@ -37,7 +37,7 @@ export function CTA() {
             <Button
               href="#"
               variant="secondary"
-              className="border-white/30 bg-white text-[#30B365] hover:bg-white/90"
+              className="h-auto rounded-xl border-white/30 bg-white px-8 py-4 text-base font-semibold tracking-wide text-[#30B365] hover:bg-white/90"
             >
               Download Radius
             </Button>

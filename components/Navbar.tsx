@@ -30,7 +30,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="#shops"
-              className="hidden text-sm font-medium text-slate-700 hover:text-slate-900 sm:inline"
+              className="hidden text-sm font-medium text-gray-600 hover:text-gray-900 sm:inline"
             >
               For Shops
             </a>

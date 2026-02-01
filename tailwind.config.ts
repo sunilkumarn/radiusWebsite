@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
+      },
       colors: {
         radiusGreen: "#30B365",
       },
