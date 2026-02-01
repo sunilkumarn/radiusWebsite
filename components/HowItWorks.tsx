@@ -16,7 +16,7 @@ function StepCard({
   icon: ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+    <div className="rounded-2xl border border-[#E6EFEA] bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
       <div className="flex flex-col items-center text-center">
         <div
           className={[
@@ -44,7 +44,7 @@ function StepCard({
 
 export function HowItWorks() {
   return (
-    <section className="bg-white" id="how-it-works">
+    <section className="bg-[#EAF7F0]" id="how-it-works">
       <Container>
         <div className="py-24">
           <div className="text-center">

@@ -27,7 +27,7 @@ function Benefit({
 
 export function Shops() {
   return (
-    <section className="bg-[#F6FBF8]" id="shops">
+    <section className="bg-white" id="shops">
       <Container>
         <div className="grid items-center gap-12 py-24 lg:grid-cols-2">
           <div>

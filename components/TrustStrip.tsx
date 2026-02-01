@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 
 export function TrustStrip() {
   return (
-    <section className="bg-[#F6FBF8]">
+    <section className="bg-white">
       <Container>
         <div className="py-8">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm font-medium text-gray-500">

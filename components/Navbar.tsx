@@ -20,7 +20,7 @@ function RadiusLogo() {
 
 export function Navbar() {
   return (
-    <header className="border-b border-slate-100 bg-white">
+    <header className="border-b border-[#E6EFEA] bg-white">
       <Container>
         <div className="flex h-16 items-center justify-between">
           <a href="#" className="focus:outline-none">

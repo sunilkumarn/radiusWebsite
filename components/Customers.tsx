@@ -42,7 +42,7 @@ function FeatureItem({
 
 export function Customers() {
   return (
-    <section className="bg-white" id="customers">
+    <section className="bg-[#EAF7F0]" id="customers">
       <Container>
         <div className="grid items-center gap-12 py-24 lg:grid-cols-2">
           <div className="mx-auto w-full max-w-sm sm:max-w-md">

@@ -39,7 +39,7 @@ export function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <section className="bg-white" id="faq">
+    <section className="bg-[#EAF7F0]" id="faq">
       <Container>
         <div className="py-24">
           <div className="text-center">
@@ -57,7 +57,7 @@ export function FAQ() {
               return (
                 <div
                   key={item.q}
-                  className="rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md"
+                  className="rounded-2xl border border-[#E6EFEA] bg-white shadow-sm transition-shadow hover:shadow-md"
                 >
                   <button
                     type="button"

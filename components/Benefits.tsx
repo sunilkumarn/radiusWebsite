@@ -21,7 +21,7 @@ function BenefitCard({
   iconBg: string;
 }) {
   return (
-    <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+    <div className="rounded-2xl border border-[#E6EFEA] bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
       <div
         className={[
           "flex h-12 w-12 items-center justify-center rounded-2xl",
@@ -40,7 +40,7 @@ function BenefitCard({
 
 export function Benefits() {
   return (
-    <section className="bg-[#F6FBF8]" id="benefits">
+    <section className="bg-white" id="benefits">
       <Container>
         <div className="py-24">
           <div className="text-center">

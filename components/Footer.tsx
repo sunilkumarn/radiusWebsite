@@ -6,7 +6,7 @@ function SocialIcon({ label, pathD }: { label: string; pathD: string }) {
     <a
       href="#"
       aria-label={label}
-      className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 text-slate-500 hover:bg-slate-50"
+      className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-[#E6EFEA] text-slate-500 hover:bg-slate-50"
     >
       <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
         <path
@@ -34,7 +34,7 @@ function StoreBadge({ label }: { label: string }) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-100 bg-white">
+    <footer className="border-t border-[#E6EFEA] bg-white">
       <Container>
         <div className="grid gap-10 py-14 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -153,7 +153,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-between gap-6 border-t border-slate-100 py-8 sm:flex-row sm:items-center">
+        <div className="flex flex-col items-start justify-between gap-6 border-t border-[#E6EFEA] py-8 sm:flex-row sm:items-center">
           <div className="text-xs text-slate-500">
             © 2024 Radius. All rights reserved.
           </div>

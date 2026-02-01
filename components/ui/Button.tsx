@@ -26,7 +26,7 @@ export function Button({
   const variants: Record<Variant, string> = {
     primary: "bg-[#30B365] text-white hover:bg-[#279d59]",
     secondary:
-      "border border-slate-200 bg-white text-gray-900 hover:bg-slate-50",
+      "border border-[#E6EFEA] bg-white text-gray-900 hover:bg-slate-50",
   };
 
   const cls = [base, sizes[size], variants[variant], className].join(" ");
