@@ -1,15 +1,21 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { MapPinIcon } from "@/components/ui/Icons";
+import Image from "next/image";
 
 function RadiusLogo() {
   return (
     <div className="flex items-center gap-3">
-      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#30B365] text-white shadow-sm">
-        <MapPinIcon className="h-5 w-5 text-white" />
-      </div>
+      <Image
+        src="/images/radius-logo.png"
+        alt="Radius Logo"
+        width={48}
+        height={48}
+        sizes="48px"
+        className="h-12 w-12 flex-none object-contain"
+        priority
+      />
       <div className="leading-tight">
-        <div className="text-sm font-semibold">Radius</div>
         <div className="text-xs text-slate-500">
           Connecting customers with local businesses
         </div>
