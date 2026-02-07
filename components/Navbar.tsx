@@ -9,17 +9,12 @@ function RadiusLogo() {
       <Image
         src="/images/radius-logo.png"
         alt="Radius Logo"
-        width={48}
-        height={48}
-        sizes="48px"
-        className="h-12 w-12 flex-none object-contain"
+        width={120}
+        height={120}
+        sizes="120"
+        className="h-18 w-18 flex-none object-contain"
         priority
       />
-      <div className="leading-tight">
-        <div className="text-xs text-slate-500">
-          Connecting customers with local businesses
-        </div>
-      </div>
     </div>
   );
 }
