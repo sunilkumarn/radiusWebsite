@@ -1,19 +1,17 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { MapPinIcon } from "@/components/ui/Icons";
-import Image from "next/image";
 
 function RadiusLogo() {
   return (
     <div className="flex items-center gap-3">
-      <Image
-        src="/images/radius-logo.png"
+      <img
+        src="./images/radius-logo.png"
         alt="Radius Logo"
         width={120}
         height={120}
-        sizes="120"
         className="h-18 w-18 flex-none object-contain"
-        priority
+        loading="eager"
       />
     </div>
   );

@@ -48,7 +48,7 @@ export function Customers() {
           <div className="mx-auto w-full max-w-sm sm:max-w-md">
             <PhoneMockup className="aspect-[9/18] w-full">
               <img
-                src="images/customer-screen.png"
+                src="./images/customer-screen.png"
                 alt="Radius customer screen"
                 className="h-full w-full object-cover"
                 width={450}

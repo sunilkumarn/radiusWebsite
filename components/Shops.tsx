@@ -72,7 +72,7 @@ export function Shops() {
           <div className="mx-auto w-full max-w-sm sm:max-w-md">
             <PhoneMockup className="aspect-[9/18] w-full">
               <img
-                src="images/shop-dashboard.png"
+                src="./images/shop-dashboard.png"
                 alt="Radius shop dashboard"
                 className="h-full w-full object-cover"
                 width={900}
