@@ -74,22 +74,22 @@ export function Footer() {
             </div>
             <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-gray-900" href="#benefits">
+                <a className="hover:text-gray-900" href="/features">
                   Features
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#how-it-works">
+                <a className="hover:text-gray-900" href="/how-it-works">
                   How It Works
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#customers">
+                <a className="hover:text-gray-900" href="/customers">
                   For Customers
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#shops">
+                <a className="hover:text-gray-900" href="/shops">
                   For Shops
                 </a>
               </li>
@@ -102,22 +102,17 @@ export function Footer() {
             </div>
             <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/about-us">
                   About Us
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/careers">
                   Careers
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/contact">
                   Contact
                 </a>
               </li>
@@ -130,22 +125,22 @@ export function Footer() {
             </div>
             <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/privacy-policy">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/terms-of-service">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/cookie-policy">
                   Cookie Policy
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="#">
+                <a className="hover:text-gray-900" href="/disclaimer">
                   Disclaimer
                 </a>
               </li>
@@ -155,7 +150,7 @@ export function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-6 border-t border-[#E6EFEA] py-8 sm:flex-row sm:items-center">
           <div className="text-xs text-slate-500">
-            © 2024 Radius. All rights reserved.
+            © 2026 Radius Technologies. All rights reserved.
           </div>
           <div className="flex items-center gap-3">
             <StoreBadge label="Google Play" />

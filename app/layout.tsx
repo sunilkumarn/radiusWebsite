@@ -12,6 +12,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Radius — Connecting customers with local businesses",
   description: "Radius helps you follow local shops, get updates, and enquire instantly.",
+  icons: {
+    icon: [
+      { url: "/images/r-logo.png", type: "image/png" },
+      { url: "/images/r-logo.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/images/r-logo.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

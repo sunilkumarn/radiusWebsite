@@ -6,7 +6,7 @@ function RadiusLogo() {
   return (
     <div className="flex items-center gap-3">
       <img
-        src="./images/radius-logo.png"
+        src="/images/radius-logo.png"
         alt="Radius Logo"
         width={120}
         height={120}
@@ -22,13 +22,13 @@ export function Navbar() {
     <header className="border-b border-[#E6EFEA] bg-white">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <a href="#" className="focus:outline-none">
+          <a href="/" className="focus:outline-none">
             <RadiusLogo />
           </a>
 
           <div className="flex items-center gap-4">
             <a
-              href="#shops"
+              href="/#shops"
               className="hidden text-sm font-medium text-gray-600 hover:text-gray-900 sm:inline"
             >
               For Shops

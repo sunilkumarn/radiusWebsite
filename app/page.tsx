@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { Customers } from "@/components/Customers";
 import { Shops } from "@/components/Shops";
-import { HowItWorks } from "@/components/HowItWorks";
+import { HomeHowItWorks } from "@/components/HomeHowItWorks";
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
@@ -18,7 +18,7 @@ export default function Page() {
         <TrustStrip />
         <Customers />
         <Shops />
-        <HowItWorks />
+        <HomeHowItWorks />
         <Benefits />
         <FAQ />
         <CTA />
