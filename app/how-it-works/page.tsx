@@ -9,7 +9,7 @@ export default function HowItWorksPage() {
       <Navbar />
       <PageLayout
         title="How It Works"
-        description="Radius connects customers with nearby shops through a simple three-step process."
+        description="Radius connects customers with nearby businesses through a simple three-step process."
       >
         <SectionBlock title="1. Shops Join Radius">
           Local businesses create their shop profile and add basic information
@@ -36,8 +36,8 @@ export default function HowItWorksPage() {
           <div>
             <p>Customers browsing Radius can:</p>
             <ul className="mt-3 list-disc space-y-1 pl-5">
-              <li>Discover nearby shops</li>
-              <li>Follow shops they like</li>
+              <li>Discover nearby businesses</li>
+              <li>Follow businesses they like</li>
               <li>Send enquiries</li>
               <li>Call or visit the shop directly</li>
             </ul>

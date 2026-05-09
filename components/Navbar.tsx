@@ -31,7 +31,7 @@ export function Navbar() {
               href="/#shops"
               className="hidden text-sm font-medium text-gray-600 hover:text-gray-900 sm:inline"
             >
-              For Shops
+              For businesses
             </a>
             <Button href="#download" variant="primary" size="sm">
               Download App

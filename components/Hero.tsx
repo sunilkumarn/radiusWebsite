@@ -20,7 +20,7 @@ export function Hero() {
                 Customer App
               </Button>
               <Button href="#shops" variant="secondary">
-                Shop App
+                Business App
               </Button>
             </div>
           </div>

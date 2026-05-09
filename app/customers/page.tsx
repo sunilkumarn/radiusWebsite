@@ -13,16 +13,16 @@ export default function CustomersPage() {
       >
         <SectionBlock>
           Instead of searching across multiple apps or relying on word of mouth,
-          Radius shows updates directly from nearby shops and services.
+          Radius shows updates directly from nearby businesses and services.
         </SectionBlock>
 
         <SectionBlock title="With Radius you can:">
           <ul className="list-disc space-y-1 pl-5">
-            <li>Discover shops and services near you</li>
+            <li>Discover businesses and services near you</li>
             <li>Follow businesses you care about</li>
             <li>Get updates on offers, new products, and announcements</li>
-            <li>Send enquiries to shops</li>
-            <li>Call or visit shops directly</li>
+            <li>Send enquiries to businesses</li>
+            <li>Call or visit businesses directly</li>
           </ul>
         </SectionBlock>
 

@@ -7,17 +7,17 @@ export function HowItWorks() {
         <div className="py-24">
           <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
             <p>
-              Radius connects customers with nearby shops through a simple
+              Radius connects customers with nearby businesses through a simple
               three-step process.
             </p>
 
             <div className="mt-10 space-y-10">
               <div>
                 <div className="text-xl font-semibold text-gray-900">
-                  <span className="font-semibold">1.</span> Shops Join Radius
+                  <span className="font-semibold">1.</span> Businesses Join Radius
                 </div>
                 <p className="mt-3 text-gray-700">
-                  Local businesses create their shop profile and add basic
+                  Local businesses create their business profile and add basic
                   information about their business such as location, category,
                   and contact details.
                 </p>
@@ -25,7 +25,7 @@ export function HowItWorks() {
 
               <div>
                 <div className="text-xl font-semibold text-gray-900">
-                  <span className="font-semibold">2.</span> Shops Share Updates
+                  <span className="font-semibold">2.</span> Businesses Share Updates
                 </div>
                 <p className="mt-3 text-gray-700">Shops can post updates such as:</p>
                 <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
@@ -49,8 +49,8 @@ export function HowItWorks() {
                   Customers browsing Radius can:
                 </p>
                 <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
-                  <li>Discover nearby shops</li>
-                  <li>Follow shops they like</li>
+                  <li>Discover nearby businesses</li>
+                  <li>Follow businesses they like</li>
                   <li>Send enquiries</li>
                   <li>Call or visit the shop directly</li>
                 </ul>

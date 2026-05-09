@@ -1,3 +1,7 @@
+ "use client";
+
+import { useEffect, useId, useState } from "react";
+import { DownloadAppModal } from "@/components/DownloadAppModal";
 import { Container } from "@/components/ui/Container";
 import { MapPinIcon } from "@/components/ui/Icons";
 
@@ -21,11 +25,32 @@ function SocialIcon({ label, pathD }: { label: string; pathD: string }) {
   );
 }
 
-function StoreBadge({ label }: { label: string }) {
+function StoreBadge({
+  label,
+  onClick,
+}: {
+  label: string;
+  onClick?: () => void;
+}) {
+  const className =
+    "inline-flex h-9 items-center rounded-lg bg-black px-4 text-xs font-semibold text-white transition hover:bg-black/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#30B365] focus-visible:ring-offset-2";
+
+  if (onClick) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        className={className}
+      >
+        {label}
+      </button>
+    );
+  }
+
   return (
     <a
       href="#"
-      className="inline-flex h-9 items-center rounded-lg bg-black px-4 text-xs font-semibold text-white"
+      className={className}
     >
       {label}
     </a>
@@ -33,6 +58,21 @@ function StoreBadge({ label }: { label: string }) {
 }
 
 export function Footer() {
+  const [downloadOpen, setDownloadOpen] = useState(false);
+  const [appStoreOpen, setAppStoreOpen] = useState(false);
+  const appStoreModalTitleId = useId();
+
+  useEffect(() => {
+    if (!appStoreOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setAppStoreOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [appStoreOpen]);
+
   return (
     <footer className="border-t border-[#E6EFEA] bg-white">
       <Container>
@@ -48,7 +88,7 @@ export function Footer() {
               Connecting customers with local businesses
             </p>
 
-            <div className="mt-5 flex items-center gap-2">
+            {/* <div className="mt-5 flex items-center gap-2">
               <SocialIcon
                 label="Twitter"
                 pathD="M19 5c-.6.3-1.2.5-1.9.6A3.2 3.2 0 0 0 18.5 4a6.7 6.7 0 0 1-2.1.8A3.2 3.2 0 0 0 10.9 7c0 .3 0 .6.1.9A9.1 9.1 0 0 1 4 4.8a3.2 3.2 0 0 0 1 4.2c-.5 0-1-.2-1.4-.4 0 1.5 1 2.9 2.6 3.2-.4.1-.9.1-1.3.1.3 1.3 1.6 2.3 3.1 2.3A6.5 6.5 0 0 1 4 16.7a9.2 9.2 0 0 0 5 1.4c6 0 9.3-5 9.3-9.3v-.4c.6-.4 1.2-1 1.7-1.6z"
@@ -65,7 +105,7 @@ export function Footer() {
                 label="LinkedIn"
                 pathD="M7 10v7M7 7h0M11 17v-4a2 2 0 0 1 4 0v4M11 10v7M15 10v7"
               />
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -90,7 +130,7 @@ export function Footer() {
               </li>
               <li>
                 <a className="hover:text-gray-900" href="/shops">
-                  For Shops
+                  For businesses
                 </a>
               </li>
             </ul>
@@ -153,11 +193,62 @@ export function Footer() {
             © 2026 Radius Technologies. All rights reserved.
           </div>
           <div className="flex items-center gap-3">
-            <StoreBadge label="Google Play" />
-            <StoreBadge label="App Store" />
+            <StoreBadge label="Google Play" onClick={() => setDownloadOpen(true)} />
+            <StoreBadge label="App Store" onClick={() => setAppStoreOpen(true)} />
           </div>
         </div>
       </Container>
+
+      <DownloadAppModal
+        open={downloadOpen}
+        onClose={() => setDownloadOpen(false)}
+      />
+
+      {appStoreOpen ? (
+        <div
+          className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 p-4 sm:items-center"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={appStoreModalTitleId}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setAppStoreOpen(false);
+          }}
+        >
+          <div className="w-full max-w-sm rounded-2xl bg-white p-5 shadow-xl ring-1 ring-black/10">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <div
+                  id={appStoreModalTitleId}
+                  className="text-base font-semibold text-slate-900"
+                >
+                  App Store
+                </div>
+                <p className="mt-1 text-sm text-slate-600">
+                  We will be live on the App store soon.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setAppStoreOpen(false)}
+                className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="mt-5 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setAppStoreOpen(false)}
+                className="inline-flex items-center justify-center rounded-xl bg-[#30B365] px-4 py-2.5 text-sm font-semibold text-white hover:bg-[#279a56]"
+              >
+                Got it
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </footer>
   );
 }

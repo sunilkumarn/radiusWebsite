@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
       <Navbar />
       <PageLayout
         title="Privacy Policy"
-        description="How Radius collects, uses, and protects information when you use the Radius Shop App."
+        description="How Radius collects, uses, and protects information when you use the Radius Business App."
       >
         <SectionBlock>
           <div className="space-y-6">
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             <p>
               Radius (&quot;we&quot;)
               values your privacy. This Privacy Policy explains how we collect,
-              use, and protect information when you use the Radius Shop App.
+              use, and protect information when you use the Radius Business App.
             </p>
           </div>
         </SectionBlock>
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
               <ul className="mt-3 list-disc space-y-1 pl-5">
                 <li>Business name</li>
                 <li>Phone number</li>
-                <li>Shop category</li>
+                <li>Business category</li>
                 <li>Login credentials</li>
               </ul>
             </div>
@@ -54,9 +54,9 @@ export default function PrivacyPolicyPage() {
                 Business Information
               </div>
               <ul className="mt-3 list-disc space-y-1 pl-5">
-                <li>Shop location</li>
-                <li>Shop description</li>
-                <li>Posts or updates shared by the shop</li>
+                <li>Business location</li>
+                <li>Business description</li>
+                <li>Posts or updates shared by the business</li>
               </ul>
             </div>
 
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
                 Communication Data
               </div>
               <ul className="mt-3 list-disc space-y-1 pl-5">
-                <li>Customer enquiries sent to your shop</li>
+                <li>Customer enquiries sent to your business</li>
                 <li>Messages exchanged through the platform</li>
               </ul>
             </div>
@@ -87,10 +87,10 @@ export default function PrivacyPolicyPage() {
           <div className="space-y-4">
             <p>We use collected information to:</p>
             <ul className="list-disc space-y-1 pl-5">
-              <li>Create and manage shop accounts</li>
-              <li>Enable customers to discover nearby shops</li>
-              <li>Deliver customer enquiries to shops</li>
-              <li>Send notifications about activity on your shop</li>
+              <li>Create and manage business accounts</li>
+              <li>Enable customers to discover nearby businesses</li>
+              <li>Deliver customer enquiries to businesses</li>
+              <li>Send notifications about activity on your business</li>
               <li>Improve the platform and user experience</li>
               <li>Maintain platform security</li>
             </ul>
@@ -99,10 +99,10 @@ export default function PrivacyPolicyPage() {
 
         <SectionBlock title="3. Location Information">
           <div className="space-y-4">
-            <p>Radius may use your shop’s location to:</p>
+            <p>Radius may use your business’s location to:</p>
             <ul className="list-disc space-y-1 pl-5">
               <li>Display your business to nearby customers</li>
-              <li>Help customers discover local shops</li>
+              <li>Help customers discover local businesses</li>
             </ul>
             <p>Location information is used only for platform functionality.</p>
           </div>
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
             <p>The application may send push notifications regarding:</p>
             <ul className="list-disc space-y-1 pl-5">
               <li>Customer enquiries</li>
-              <li>Activity on your shop posts</li>
+              <li>Activity on your business posts</li>
               <li>Important updates about the platform</li>
             </ul>
             <p>You may disable notifications through your device settings.</p>
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
             <p>We do <strong>not sell personal data</strong>.</p>
             <p>Information may be shared only in the following cases:</p>
             <ul className="list-disc space-y-1 pl-5">
-              <li>With customers interacting with your shop</li>
+              <li>With customers interacting with your business</li>
               <li>
                 With service providers supporting the platform infrastructure
               </li>

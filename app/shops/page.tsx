@@ -8,11 +8,11 @@ export default function ShopsPage() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <Navbar />
       <PageLayout
-        title="For Shops"
+        title="For Businesses"
         description="Radius helps local businesses stay visible to nearby customers."
       >
         <SectionBlock>
-          Many shops struggle to reach customers online without spending heavily
+          Many businesses struggle to reach customers online without spending heavily
           on advertising or managing complex social media pages.
         </SectionBlock>
 

@@ -64,7 +64,7 @@ export function HomeHowItWorks() {
             />
             <StepCard
               step="2"
-              title="Follow shops"
+              title="Follow businesses"
               description="Search and follow your favorite local businesses. Build your personalized feed."
               iconBg="bg-blue-50"
               icon={<StorefrontIcon className="h-6 w-6" />}

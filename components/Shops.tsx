@@ -73,7 +73,7 @@ export function Shops() {
             <PhoneMockup className="aspect-[9/18] w-full">
               <img
                 src="./images/shop-dashboard.png"
-                alt="Radius shop dashboard"
+                alt="Radius business dashboard"
                 className="h-full w-full object-cover"
                 width={900}
                 height={810}

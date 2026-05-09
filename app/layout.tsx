@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Radius — Connecting customers with local businesses",
-  description: "Radius helps you follow local shops, get updates, and enquire instantly.",
+  description: "Radius helps you follow local businesses, get updates, and enquire instantly.",
   icons: {
     icon: [
       { url: "/images/r-logo.png", type: "image/png" },

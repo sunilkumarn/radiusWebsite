@@ -18,7 +18,7 @@ export default function AboutUsPage() {
               people discover and connect with the businesses around them.
             </p>
             <p>
-              Local shops are an essential part of everyday life, but many
+              Local businesses are an essential part of everyday life, but many
               struggle to stay visible in an increasingly digital world
               dominated by large platforms and complex advertising systems.
             </p>
