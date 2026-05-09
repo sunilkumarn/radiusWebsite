@@ -9,10 +9,10 @@ export function Hero() {
         <div className="grid items-center gap-12 py-28 lg:grid-cols-2 lg:py-32">
           <div>
             <h1 className="max-w-xl text-5xl font-bold leading-tight tracking-tight text-gray-900 md:text-6xl">
-              Stay connected to every local shop around you
+              Stay connected to every local business around you
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-600">
-              Follow shops. Get updates. Enquire instantly. Never miss offers.
+              Follow businesses. Get updates. Enquire instantly. Never miss offers.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">

@@ -60,12 +60,12 @@ export function Customers() {
 
           <div>
             <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
-              Everything you need from nearby shops
+              Everything you need from nearby businesses
             </h2>
 
             <div className="mt-8 space-y-8">
               <FeatureItem
-                title="Follow favorite shops"
+                title="Follow favorite businesses"
                 description="Stay updated with your go-to local businesses. Never miss what matters to you."
                 icon={<HeartIcon className="h-5 w-5" />}
                 iconBg="bg-emerald-50"
