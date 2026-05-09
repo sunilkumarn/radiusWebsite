@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useId, useRef, useState } from "react";
-import { SmileIcon, StorefrontIcon } from "@/components/ui/Icons";
 
 type DownloadAppModalProps = {
   open: boolean;
@@ -14,16 +14,16 @@ const apps = [
     description:
       "Discover nearby businesses, offers, updates, and connect with local shops around you.",
     href: "https://play.google.com/store/apps/details?id=in.getradius.customer",
-    icon: SmileIcon,
-    iconClassName: "bg-emerald-50 text-[#30B365]",
+    imageSrc: "/images/radius-customer.png",
+    imageAlt: "Radius Customer app icon",
   },
   {
     title: "Business App",
     description:
       "Grow your business, post updates, engage customers, and build your local presence.",
     href: "https://play.google.com/store/apps/details?id=in.getradius.business",
-    icon: StorefrontIcon,
-    iconClassName: "bg-slate-900 text-white",
+    imageSrc: "/images/radius-partner-icon.png",
+    imageAlt: "Radius Business app icon",
   },
 ] as const;
 
@@ -189,20 +189,19 @@ export function DownloadAppModal({
 
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {apps.map((app) => {
-            const Icon = app.icon;
-
             return (
               <div
                 key={app.title}
                 className="group rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-[#CFE8D8] hover:shadow-[0_20px_40px_rgba(48,179,101,0.12)]"
               >
-                <div
-                  className={[
-                    "inline-flex h-12 w-12 items-center justify-center rounded-2xl",
-                    app.iconClassName,
-                  ].join(" ")}
-                >
-                  <Icon className="h-6 w-6" />
+                <div className="inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                  <Image
+                    src={app.imageSrc}
+                    alt={app.imageAlt}
+                    width={56}
+                    height={56}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 <h3 className="mt-5 text-xl font-semibold text-slate-950">{app.title}</h3>

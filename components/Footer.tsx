@@ -1,9 +1,9 @@
  "use client";
 
+import Image from "next/image";
 import { useEffect, useId, useState } from "react";
 import { DownloadAppModal } from "@/components/DownloadAppModal";
 import { Container } from "@/components/ui/Container";
-import { MapPinIcon } from "@/components/ui/Icons";
 
 function SocialIcon({ label, pathD }: { label: string; pathD: string }) {
   return (
@@ -79,8 +79,14 @@ export function Footer() {
         <div className="grid gap-10 py-14 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#30B365] text-white shadow-sm">
-                <MapPinIcon className="h-5 w-5 text-white" />
+              <div className="h-9 w-9 overflow-hidden rounded-xl shadow-sm ring-1 ring-[#E6EFEA]">
+                <Image
+                  src="/images/radius-customer.png"
+                  alt="Radius logo"
+                  width={36}
+                  height={36}
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="text-sm font-semibold text-gray-900">Radius</div>
             </div>

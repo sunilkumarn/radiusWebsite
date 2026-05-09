@@ -60,17 +60,17 @@ export function Shops() {
 
             <div className="mt-10">
               <Button
-                href="#"
+                href="/shops"
                 variant="secondary"
                 className="border-[#30B365]/30 text-[#30B365] hover:bg-emerald-50"
               >
-                Learn More About Shop App
+                Learn More About business App
               </Button>
             </div>
           </div>
 
           <div className="mx-auto w-full max-w-sm sm:max-w-md">
-            <PhoneMockup className="aspect-[9/18] w-full">
+            <PhoneMockup className="aspect-[10/18] w-full">
               <img
                 src="./images/shop-dashboard.png"
                 alt="Radius business dashboard"
